@@ -3,7 +3,8 @@
 
 ## Menu de navigation
 
-* ```html
+Pour ajouter une entrée, vous pouvez insérer un nouvel élément `<li>Mon sous-menu</li>` à l'intérieur du `<ul></ul>`
+```html
 <aside id="header">
   <nav>
     <img src="img/logo.png" alt="Logo musique">
@@ -15,11 +16,8 @@
     </ul>
   </nav>
 </aside>
-``` 
+```
 
-Pour ajouter une entrée, vous pouvez insérer un nouvel élément `<li>Mon sous-menu</li>` à l'intérieur du `<ul></ul>`
-
--------------------------------
 
 ## Page artiste
 
@@ -31,10 +29,9 @@ Cette section représente le contenu de la page affichée à l'écran.
 Pour créer une page artiste, il faut d'abord ouvrir un `<article></article>` dans lequel on va insérer les éléments ci-dessous.
 ```html
 <article class="contenu">
-	Ici, on va insérer les éléments ci-dessous (nom de l'artiste, followers, barre d'actions, biographie, discographie) dans des <div> qui possède différentes classes. 
+	Ici, on va insérer les éléments ci-dessous (nom de l'artiste, followers, barre d'actions, biographie, discographie) dans des <div> qui possède différentes classes.
 </article>
 ```
-
 
 L'application est actuellement en mesure de fournir des informations sur un artiste :
 
@@ -43,7 +40,7 @@ L'application est actuellement en mesure de fournir des informations sur un arti
 		<div class="entete-artiste">
           <h2 class="nom-artiste">RIDSA</h2>
           <h4 class="followers-artiste">86,191 followers</h4>
-        </div> 
+        </div>
       ```
 * Nombre de followers (popularité)
 	* ```html
@@ -65,6 +62,7 @@ L'application est actuellement en mesure de fournir des informations sur un arti
 		<div class="description-artiste"> ... </div>
       ```
 * La liste des différents albums (avec ses titres)
+Si vous préférez la pochette de l'album à droite utiliser la classe .pochette-droite (ou .pochette-haut) sur la `<div class="album-artiste">`
 	* ```html
 		<div class="album-artiste">
           <div class="pochette-album">
@@ -75,8 +73,7 @@ L'application est actuellement en mesure de fournir des informations sur un arti
               <span class="numero-titre">1.</span>
               <span class="titre-titre">Oh mama</span>
               <span class="duree-titre">3:21</span>
-            </li> 
+            </li>
           </ul>
       </div>
     ```
-

@@ -68,6 +68,10 @@ body #main article.contenu hr {
   width: 30%;
   color: #bbbbbb;
 }
+body #main article.contenu div.album-artiste {
+  border-top: 1px solid #5a5a5a;
+  border-bottom: 1px solid #5a5a5a;
+}
 body #main article.contenu div.entete-artiste h4.followers-artiste {
   font-weight: lighter;
 }
@@ -117,10 +121,20 @@ body #main article.contenu div.description-artiste {
 .album-artiste {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   text-align: left;
+  padding: 25px 0px;
+}
+.album-artiste.pochette-haut {
+  flex-direction: column;
+  align-items: center;
+}
+.album-artiste.pochette-droite {
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
 }
 .album-artiste .pochette-album {
   width: 30%;
@@ -134,7 +148,8 @@ body #main article.contenu div.description-artiste {
 .album-artiste .titres-album {
   list-style-type: none;
   line-height: 2;
-  width: 60%;
+  width: 50%;
+  padding-left: 0px;
 }
 .album-artiste .titres-album li {
   display: block;

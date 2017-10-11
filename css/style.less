@@ -7,6 +7,7 @@
 @vertPrincipal : #1ed760;
 @presqueBlanc: #dddddd;
 @grisClair: #bbbbbb;
+@grisFonce: #5a5a5a;
 @transparent: transparent;
 
 html, body {
@@ -78,8 +79,8 @@ body {
       }
 
       div.album-artiste {
-        border-top: 1px solid @grisClair;
-        border-bottom: 1px solid @grisClair;
+        border-top: 1px solid @grisFonce;
+        border-bottom: 1px solid @grisFonce;
       }
 
       div.entete-artiste {
@@ -143,12 +144,9 @@ body {
         }
       }
 
-      // Description pour un artiste
       div.description-artiste {
         padding:15px 30px;
       }
-
-      // Liste des musiques de l'artiste
     }
   }
 }
@@ -156,10 +154,22 @@ body {
 .album-artiste {
   display:flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   text-align: left;
+  padding:25px 0px;
+
+  &.pochette-haut {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &.pochette-droite {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
 
   .pochette-album {
     width:30%;
@@ -174,7 +184,8 @@ body {
   .titres-album {
     list-style-type: none;
     line-height: 2;
-    width: 60%;
+    width: 50%;
+    padding-left: 0px;
 
     li {
       display:block;
