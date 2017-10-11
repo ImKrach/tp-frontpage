@@ -17,7 +17,7 @@
 </aside>
 ``` 
 
-Pour ajouter une entrée, vous pouvez insérer un nouvel élément <li>Mon sous-menu</li> à l'intérieur du <ul></ul>
+Pour ajouter une entrée, vous pouvez insérer un nouvel élément `<li>Mon sous-menu</li>` à l'intérieur du `<ul></ul>`
 
 -------------------------------
 
@@ -27,6 +27,14 @@ Cette section représente le contenu de la page affichée à l'écran.
 ```html
 <section id="main" class="conteneur">
 ```
+
+Pour créer une page artiste, il faut d'abord ouvrir un `<article></article>` dans lequel on va insérer les éléments ci-dessous.
+```html
+<article class="contenu">
+	Ici, on va insérer les éléments ci-dessous (nom de l'artiste, followers, barre d'actions, biographie, discographie) dans des <div> qui possède différentes classes. 
+</article>
+```
+
 
 L'application est actuellement en mesure de fournir des informations sur un artiste :
 
@@ -69,8 +77,6 @@ L'application est actuellement en mesure de fournir des informations sur un arti
               <span class="duree-titre">3:21</span>
             </li> 
           </ul>
-      	</div>
+      </div>
     ```
 
-
-Il suffit d'éditer les valeurs 
