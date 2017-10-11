@@ -3,7 +3,7 @@
 
 ## Menu de navigation
 
-`
+* ```html
 <aside id="header">
   <nav>
     <img src="img/logo.png" alt="Logo musique">
@@ -15,7 +15,7 @@
     </ul>
   </nav>
 </aside>
-` 
+``` 
 
 Pour ajouter une entrée, vous pouvez insérer un nouvel élément <li>Mon sous-menu</li> à l'intérieur du <ul></ul>
 
@@ -23,11 +23,11 @@ Pour ajouter une entrée, vous pouvez insérer un nouvel élément <li>Mon sous-
 
 ## Page artiste
 
-`
-<section id="main" class="conteneur">
-`
-
 Cette section représente le contenu de la page affichée à l'écran.
+```html
+<section id="main" class="conteneur">
+```
+
 L'application est actuellement en mesure de fournir des informations sur un artiste :
 
 * Nom de l'artiste
@@ -38,20 +38,27 @@ L'application est actuellement en mesure de fournir des informations sur un arti
         </div> 
       ```
 * Nombre de followers (popularité)
-	* ` <div class="entete-artiste">
+	* ```html
+		<div class="entete-artiste">
           <h2 class="nom-artiste">RIDSA</h2>
           <h4 class="followers-artiste">86,191 followers</h4>
-        </div> `
+        </div>
+      ```
 * Une barre d'actions : "PLAY" / "FOLLOW" / "Menu contextuel (pour plus d'actions)"
-	* ` <div class="actions">
+	* ```html
+		<div class="actions">
           <button class="btn btn-principal">PLAY</button>
           <button class="btn btn-secondaire">FOLLOW</button>
           <button class="btn btn-transparent">&middot; &middot; &middot;</button>
-        </div> `
+        </div>
+      ```
 * Une description/biographie de l'artiste
-	* ` <div class="description-artiste"> ... </div> `
+	* ```html
+		<div class="description-artiste"> ... </div>
+      ```
 * La liste des différents albums (avec ses titres)
-	* ` <div class="album-artiste">
+	* ```html
+		<div class="album-artiste">
           <div class="pochette-album">
             <img src="img/RIDSA_pochette-album.jpg" alt="RIDSA - Mes histoires">
           </div>
@@ -62,6 +69,8 @@ L'application est actuellement en mesure de fournir des informations sur un arti
               <span class="duree-titre">3:21</span>
             </li> 
           </ul>
-      	</div>`
+      	</div>
+    ```
+
 
 Il suffit d'éditer les valeurs 
