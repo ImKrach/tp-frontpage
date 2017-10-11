@@ -31,10 +31,12 @@ Cette section représente le contenu de la page affichée à l'écran.
 L'application est actuellement en mesure de fournir des informations sur un artiste :
 
 * Nom de l'artiste
-	* ` <div class="entete-artiste">
+	* ```html
+		<div class="entete-artiste">
           <h2 class="nom-artiste">RIDSA</h2>
           <h4 class="followers-artiste">86,191 followers</h4>
-        </div> `
+        </div> 
+      ```
 * Nombre de followers (popularité)
 	* ` <div class="entete-artiste">
           <h2 class="nom-artiste">RIDSA</h2>
